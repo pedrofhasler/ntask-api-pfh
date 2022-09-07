@@ -7,8 +7,9 @@ const app = express();
 app.set('json spaces', 4);
 
 consign()
-  .include('src/models')
-  .then('src/middlewares.js')
-  .then('src/routes')
-  .then('src/boot.js')
+  .include('db.js')
+  .then('models')
+  .then('middlewares.js')
+  .then('routes')
+  .then('boot.js')
   .into(app);
