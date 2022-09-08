@@ -2,7 +2,7 @@ module.exports = (app) => {
   const Tasks = app.models.tasks;
 
   app
-    .route('/task')
+    .route('/tasks')
     .get(async (req, res) => {
       try {
         const result = await Tasks.findAll();
