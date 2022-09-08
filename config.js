@@ -11,4 +11,8 @@ module.exports = {
       },
     },
   },
+  jwt: {
+    secret: 'aiosjdoiaj###&ẅieiwyskdjg',
+    options: { session: false },
+  },
 };
