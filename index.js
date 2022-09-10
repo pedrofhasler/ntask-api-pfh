@@ -6,7 +6,7 @@ const app = express();
 
 app.set('json spaces', 4);
 
-consign()
+consign({ verbose: false })
   .include('db.js')
   .then('models')
   .then('associations.js')

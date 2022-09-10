@@ -5,7 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "NODE_ENV=test mocha test/**/*.js"
+    "test": "NODE_ENV=test mocha test/**/*.js",
+    "apidoc": "apidoc -i routes/ -o public/apidoc"
+  },
+  "apidoc": {
+    "name": "Documentação - Node Task API",
+    "template": {
+      "forceLanguage": "pt-br"
+    }
   },
   "author": "Pedro Fraga Hasler",
   "dependencies": {
@@ -20,6 +27,7 @@
     "sqlite3": "^5.0.11"
   },
   "devDependencies": {
+    "apidoc": "^0.53.0",
     "chai": "^4.3.6",
     "mocha": "^10.0.0",
     "supertest": "^6.2.4"
