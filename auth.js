@@ -26,7 +26,7 @@ module.exports = (app) => {
   );
 
   return {
-    initialize: () => passport.initialize,
+    initialize: () => passport.initialize(),
     authenticate: () => passport.authenticate('jwt', jwt.options),
   };
 };
